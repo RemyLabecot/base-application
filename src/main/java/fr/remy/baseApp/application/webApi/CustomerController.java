@@ -2,6 +2,7 @@ package fr.remy.baseApp.application.webApi;
 
 import fr.remy.baseApp.domain.entity.Customer;
 import fr.remy.baseApp.domain.use_cases.LoadCustomers;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/customer")
+@CrossOrigin
 public class CustomerController {
 
     private final LoadCustomers loadCustomers;
